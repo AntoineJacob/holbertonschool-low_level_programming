@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - Print the alphabet
- *
- * Return: return 0 
- */
+*main - Print the alphabet
+*
+*Return:return 0
+*/
 int main(void)
 {
 	char a[26] = "abcdefghijklmnopqrstuvwxyz";
@@ -17,4 +17,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-  
