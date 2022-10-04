@@ -1,19 +1,22 @@
 #include "main.h"
+
 /**
- * main - Prints _putchar as a message.
- *
- * Return: Always 0 (Success)
- */
+* *main - Entry point
+*
+* Return: int
+*/
 int main(void)
 {
-	int str[] = {95, 112, 117, 116, 99, 104, 97, 114};
-	int count, size;
+		char hol[] = "_putchar";
+		int n;
 
-	size = sizeof(str) / sizeof(int);
-	for (count = 0; count < size; count++)
-	{
-		_putchar(str[count]);
-	}
-	_putchar('\n');
-	return (0);
+		n = 0;
+
+		while (n <= 7)
+		{
+			_putchar(hol[n]);
+			n++;
+		}
+		_putchar('\n');
+		return (0);
 }
