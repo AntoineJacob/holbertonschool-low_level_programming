@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * Main - Prints digits with , and space.
+ * main - Prints digits with , and space.
  *
  *Return: Return 0.
  */
@@ -18,6 +18,6 @@ int main(void)
 		putchar(',');
 		putchar(' ');
 	}
-	putchar(i);
+	putchar('\n');
 	return (0);
 }
