@@ -1,23 +1,16 @@
 #include "main.h"
-
 /**
  *Main -Prints alphabet lowercase
  *
  *Return: Return 0
  */
-
-int main(void)
+void print_alphabet(void)
 {
-                char hol[] = "abcdefghijklmnopqrstuvwxyz";
-                int n;
+	int i;
 
-                n = 0;
-
-                while (n <= 25)
-                {
-                        _putchar(hol[n]);
-                        n++;
-                }
-                _putchar('\n');
-                return (0);
+	for (i = 97; i <= 122; i++)
+	{
+		_putchar(i);
+	}
+	_putchar('\n');
 }
