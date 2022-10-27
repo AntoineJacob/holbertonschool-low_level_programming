@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	if (argc > 0)
 	{
-		for (incr = 0; incr < 0; incr++)
+		for (incr = 0; incr < argc; incr++)
 		{
 			printf("%s\n", argv[incr]);
 		}
