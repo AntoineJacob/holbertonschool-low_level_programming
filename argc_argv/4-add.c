@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 			}
 		ad += atoi(argv[i]);
 		}
-	printf("%d\n", add);
+	printf("%d\n", ad);
 	}
 	return (0);
 }
