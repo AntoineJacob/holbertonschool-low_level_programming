@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#incude "main.h"
+#include "main.h"
 
 /**
  * Main - function who return each arg
