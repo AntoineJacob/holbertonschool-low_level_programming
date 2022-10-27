@@ -4,13 +4,13 @@
 
 /**
  * Print_arg - Print the number of arg
- * argc: argc
- * argv: argv
+ * @argc: argc
+ * @argv: argv
  * Return: Return 0.
  */
 
-int main(int argc, char __attribute__((unused)) *argv[])
+int print_arg(int argc, char __attribute__((unused)) *argv[])
 {
-	printf( "%d\n",argc - 1);
+	printf("%d\n", argc - 1);
 	return (0);
 }
