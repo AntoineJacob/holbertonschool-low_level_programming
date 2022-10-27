@@ -9,7 +9,7 @@
  * Return: Return 0.
  **/
 
-int print_arg(int argc, char *argv[])
+int  __attribute__ ((unused))int print_arg(int argc, char *argv[])
 {
 	printf("argc =%d\n", argc);
 	return (0);
