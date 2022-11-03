@@ -4,7 +4,7 @@
 /**
  *struct dog - dog structure.
  *@name: name
- *@owner: owner.
+ *@owner: owner
  *@age: age
  */
 
