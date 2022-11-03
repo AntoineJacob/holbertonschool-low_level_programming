@@ -18,3 +18,5 @@ struct dog
  *dog - new typedef dog
  */
 typedef struct dog;
+
+#endif
