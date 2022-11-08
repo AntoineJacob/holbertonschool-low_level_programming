@@ -12,10 +12,16 @@ void print_i(va_list arg);
 void print_f(va_list arg);
 void print_s(va_list arg);
 
-typedef struct form
+/**
+ * struct format - struct format
+ * @type: the type
+ * @f: the function associated
+ */
+
+typedef struct format
 {
 	char * format;
 	void (*f)(va_list);
-} format;
+} form;
 
 #endif

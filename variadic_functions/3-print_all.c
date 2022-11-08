@@ -42,8 +42,8 @@ void print_s(va_list arg)
 	char *str;
 
 	str = (va_arg(arg, char *));
-		if (*str == NULL)
-			printf("(nil");
+		if (str == NULL)
+			printf("(nil)");
 }
 
 /**
@@ -54,13 +54,13 @@ void print_s(va_list arg)
 
 void print_all(const char * const format, ...)
 {
-va_list arg;
-form typ[] = {
-	{"c", print_c},
-	{"i", print_i},
-	{"f", print_f},
-	{"s", print_s},
-	{NULL, NULL}
+	va_list arg;
+	form typ[] = {
+		{"c", print_c},
+		{"i", print_i},
+		{"f", print_f},
+		{"s", print_s},
+		{NULL, NULL}
 	};
 
 int i, j, n = 0;
