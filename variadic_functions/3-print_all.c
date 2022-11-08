@@ -42,10 +42,12 @@ void print_s(va_list arg)
 	char *str;
 
 	str = (va_arg(arg, char *));
-		if (str == NULL)
-			printf("(nil)");
-			return;
-		printf("%s", str);
+	if (str == NULL)
+	{
+		printf("(nil)");
+		return;
+	}
+	printf("%s", str);
 }
 
 /**
