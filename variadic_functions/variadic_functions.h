@@ -20,7 +20,7 @@ void print_s(va_list arg);
 
 typedef struct format
 {
-	char * format;
+	char *type;
 	void (*f)(va_list);
 } form;
 
