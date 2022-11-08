@@ -49,7 +49,6 @@ void print_s(va_list arg)
 /**
 * print_all - function that return all
 *@format: format
-
 */
 
 void print_all(const char * const format, ...)
@@ -62,16 +61,14 @@ void print_all(const char * const format, ...)
 		{"s", print_s},
 		{NULL, NULL}
 	};
+	int i = 0, j = 0, n = 0;
 
-int i, j, n = 0;
-
-va_start(arg, format);
-
-while(format && format[j])
-{
-	printf(n == 1 ? "," :"");
-	n = 0;
-	while(typ[i].type)
+	va_start(arg, format);
+	while (format && format[j])
+	{
+		printf(n == 1 ? ", " : "");
+		n = 0;
+		while (typ[i].type)
 		{
 			if (*(typ[i].type) == format[j])
 			{
@@ -80,9 +77,9 @@ while(format && format[j])
 			}
 			i++;
 		}
-	i = 0;
-	j++;
-}
-va_end(arg);
-printf("\n");
+		i = 0;
+		j++;
+	}
+	va_end(arg);
+	printf("\n");
 }
